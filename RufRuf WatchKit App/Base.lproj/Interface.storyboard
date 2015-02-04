@@ -17,21 +17,21 @@
                         <button width="1" alignment="center" verticalAlignment="bottom" title="Answer A" id="t0q-HN-MLw">
                             <fontDescription key="font" type="system" pointSize="13"/>
                             <connections>
-                                <action selector="answerATapped" destination="AgC-eL-Hgc" id="Clw-U3-aMB"/>
+                                <action selector="answerATapped" destination="AgC-eL-Hgc" id="tpm-a4-NNe"/>
                             </connections>
                         </button>
                         <button width="1" alignment="center" verticalAlignment="bottom" title="Answer B" id="Bni-Bg-LV7">
                             <fontDescription key="font" type="system" pointSize="13"/>
                             <connections>
-                                <action selector="answerBTapped" destination="AgC-eL-Hgc" id="apd-O9-eIi"/>
+                                <action selector="answerBTapped" destination="AgC-eL-Hgc" id="2Px-j9-I1q"/>
                             </connections>
                         </button>
                     </items>
                     <connections>
-                        <outlet property="answerABtn" destination="t0q-HN-MLw" id="NDT-xR-1bR"/>
-                        <outlet property="answerBBtn" destination="Bni-Bg-LV7" id="xEr-cB-Dej"/>
-                        <outlet property="feedbackTxtLabel" destination="Uhb-AX-sIk" id="Qmn-Vf-jud"/>
-                        <outlet property="questionTxtLabel" destination="CyJ-kZ-XBU" id="oiP-ye-z0F"/>
+                        <outlet property="answerABtn" destination="t0q-HN-MLw" id="wIt-XX-XS2"/>
+                        <outlet property="answerBBtn" destination="Bni-Bg-LV7" id="hnJ-1f-3u3"/>
+                        <outlet property="feedbackTxtLabel" destination="Uhb-AX-sIk" id="dih-jo-znj"/>
+                        <outlet property="questionTxtLabel" destination="CyJ-kZ-XBU" id="9wg-Cf-dQH"/>
                     </connections>
                 </controller>
             </objects>

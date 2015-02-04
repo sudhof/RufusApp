@@ -13,11 +13,11 @@ import Foundation
 class InterfaceController: WKInterfaceController {
 
 
+
     @IBOutlet weak var questionTxtLabel: WKInterfaceLabel!
-    @IBOutlet weak var answerABtn: WKInterfaceButton!
-    @IBOutlet weak var answerBBtn: WKInterfaceButton!
     @IBOutlet weak var feedbackTxtLabel: WKInterfaceLabel!
-    
+    @IBOutlet weak var answerBBtn: WKInterfaceButton!
+    @IBOutlet weak var answerABtn: WKInterfaceButton!
     
     let qManager = QuestionManagerModel()
     // Keep track of whether there's a pending update
@@ -41,6 +41,13 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
     
+    @IBAction func answerATapped() {
+        evaluateResponse(0)
+    }
+    
+    @IBAction func answerBTapped() {
+        evaluateResponse(1)
+    }
     
     func updateQuestion() {
         if !updating {
@@ -76,14 +83,6 @@ class InterfaceController: WKInterfaceController {
     }
 
     
-
-    @IBAction func answerATapped() {
-        evaluateResponse(0)
-    }
-
-    @IBAction func answerBTapped() {
-        evaluateResponse(1)
-    }
 
     func evaluateResponse(chosenOptionIndex: Int) {
         feedbackTxtLabel.setText(qManager.getFeedbackText(chosenOptionIndex))
