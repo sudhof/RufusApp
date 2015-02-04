@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>RufRuf WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>RufRuf.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +23,11 @@
 			<true/>
 		</dict>
 		<key>D941A1D21A8048C500606AF0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D9E54FBB1A818CFD007E9BE3</key>
 		<dict>
 			<key>primary</key>
 			<true/>

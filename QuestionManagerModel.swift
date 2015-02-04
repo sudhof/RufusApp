@@ -27,6 +27,12 @@ class QuestionManagerModel {
         self.fetchQuestion()
         return (currQuestion, currOptions, currCorrectAnswerIndex);
     }
+    func getCachedQuestion() -> (String, [String], Int) {
+        // Returns the current question
+        return (currQuestion, currOptions, currCorrectAnswerIndex);
+    }
+
+    
     func getQuestionText() -> String {
         return currQuestion;
     }

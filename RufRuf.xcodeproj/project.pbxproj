@@ -14,6 +14,13 @@
 		D941A1CE1A8048C500606AF0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D941A1CC1A8048C500606AF0 /* LaunchScreen.xib */; };
 		D941A1DA1A8048C500606AF0 /* RufRufTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D941A1D91A8048C500606AF0 /* RufRufTests.swift */; };
 		D941A1E41A80495E00606AF0 /* QuestionManagerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D941A1E31A80495E00606AF0 /* QuestionManagerModel.swift */; };
+		D9E54FB71A818CFD007E9BE3 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E54FB61A818CFD007E9BE3 /* InterfaceController.swift */; };
+		D9E54FB91A818CFD007E9BE3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9E54FB81A818CFD007E9BE3 /* Images.xcassets */; };
+		D9E54FBD1A818CFD007E9BE3 /* RufRuf WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = D9E54FBC1A818CFD007E9BE3 /* RufRuf WatchKit App.app */; };
+		D9E54FC51A818CFD007E9BE3 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9E54FC31A818CFD007E9BE3 /* Interface.storyboard */; };
+		D9E54FC71A818CFD007E9BE3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9E54FC61A818CFD007E9BE3 /* Images.xcassets */; };
+		D9E54FCA1A818CFD007E9BE3 /* RufRuf WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D9E54FB21A818CFD007E9BE3 /* RufRuf WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D9E54FFD1A819512007E9BE3 /* QuestionManagerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D941A1E31A80495E00606AF0 /* QuestionManagerModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +31,35 @@
 			remoteGlobalIDString = D941A1BD1A8048C400606AF0;
 			remoteInfo = RufRuf;
 		};
+		D9E54FBE1A818CFD007E9BE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D941A1B61A8048C400606AF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9E54FBB1A818CFD007E9BE3;
+			remoteInfo = "RufRuf WatchKit App";
+		};
+		D9E54FC81A818CFD007E9BE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D941A1B61A8048C400606AF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9E54FB11A818CFD007E9BE3;
+			remoteInfo = "RufRuf WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D9E54FD11A818CFD007E9BE3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D9E54FCA1A818CFD007E9BE3 /* RufRuf WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D941A1BE1A8048C400606AF0 /* RufRuf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RufRuf.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +73,14 @@
 		D941A1D81A8048C500606AF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D941A1D91A8048C500606AF0 /* RufRufTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RufRufTests.swift; sourceTree = "<group>"; };
 		D941A1E31A80495E00606AF0 /* QuestionManagerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionManagerModel.swift; sourceTree = "<group>"; };
+		D9E54FB21A818CFD007E9BE3 /* RufRuf WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RufRuf WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9E54FB51A818CFD007E9BE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9E54FB61A818CFD007E9BE3 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		D9E54FB81A818CFD007E9BE3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D9E54FBC1A818CFD007E9BE3 /* RufRuf WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RufRuf WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9E54FC21A818CFD007E9BE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9E54FC41A818CFD007E9BE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		D9E54FC61A818CFD007E9BE3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +98,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D9E54FAF1A818CFD007E9BE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -64,6 +114,8 @@
 				D941A1E31A80495E00606AF0 /* QuestionManagerModel.swift */,
 				D941A1C01A8048C400606AF0 /* RufRuf */,
 				D941A1D61A8048C500606AF0 /* RufRufTests */,
+				D9E54FB31A818CFD007E9BE3 /* RufRuf WatchKit Extension */,
+				D9E54FC01A818CFD007E9BE3 /* RufRuf WatchKit App */,
 				D941A1BF1A8048C400606AF0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,6 +125,8 @@
 			children = (
 				D941A1BE1A8048C400606AF0 /* RufRuf.app */,
 				D941A1D31A8048C500606AF0 /* RufRufTests.xctest */,
+				D9E54FB21A818CFD007E9BE3 /* RufRuf WatchKit Extension.appex */,
+				D9E54FBC1A818CFD007E9BE3 /* RufRuf WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,6 +169,42 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D9E54FB31A818CFD007E9BE3 /* RufRuf WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D9E54FB61A818CFD007E9BE3 /* InterfaceController.swift */,
+				D9E54FB81A818CFD007E9BE3 /* Images.xcassets */,
+				D9E54FB41A818CFD007E9BE3 /* Supporting Files */,
+			);
+			path = "RufRuf WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		D9E54FB41A818CFD007E9BE3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D9E54FB51A818CFD007E9BE3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D9E54FC01A818CFD007E9BE3 /* RufRuf WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				D9E54FC31A818CFD007E9BE3 /* Interface.storyboard */,
+				D9E54FC61A818CFD007E9BE3 /* Images.xcassets */,
+				D9E54FC11A818CFD007E9BE3 /* Supporting Files */,
+			);
+			path = "RufRuf WatchKit App";
+			sourceTree = "<group>";
+		};
+		D9E54FC11A818CFD007E9BE3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D9E54FC21A818CFD007E9BE3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -125,10 +215,12 @@
 				D941A1BA1A8048C400606AF0 /* Sources */,
 				D941A1BB1A8048C400606AF0 /* Frameworks */,
 				D941A1BC1A8048C400606AF0 /* Resources */,
+				D9E54FD11A818CFD007E9BE3 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D9E54FC91A818CFD007E9BE3 /* PBXTargetDependency */,
 			);
 			name = RufRuf;
 			productName = RufRuf;
@@ -153,6 +245,39 @@
 			productReference = D941A1D31A8048C500606AF0 /* RufRufTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		D9E54FB11A818CFD007E9BE3 /* RufRuf WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9E54FD01A818CFD007E9BE3 /* Build configuration list for PBXNativeTarget "RufRuf WatchKit Extension" */;
+			buildPhases = (
+				D9E54FAE1A818CFD007E9BE3 /* Sources */,
+				D9E54FAF1A818CFD007E9BE3 /* Frameworks */,
+				D9E54FB01A818CFD007E9BE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9E54FBF1A818CFD007E9BE3 /* PBXTargetDependency */,
+			);
+			name = "RufRuf WatchKit Extension";
+			productName = "RufRuf WatchKit Extension";
+			productReference = D9E54FB21A818CFD007E9BE3 /* RufRuf WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		D9E54FBB1A818CFD007E9BE3 /* RufRuf WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9E54FCF1A818CFD007E9BE3 /* Build configuration list for PBXNativeTarget "RufRuf WatchKit App" */;
+			buildPhases = (
+				D9E54FBA1A818CFD007E9BE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RufRuf WatchKit App";
+			productName = "RufRuf WatchKit App";
+			productReference = D9E54FBC1A818CFD007E9BE3 /* RufRuf WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,6 +293,12 @@
 					D941A1D21A8048C500606AF0 = {
 						CreatedOnToolsVersion = 6.1.1;
 						TestTargetID = D941A1BD1A8048C400606AF0;
+					};
+					D9E54FB11A818CFD007E9BE3 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					D9E54FBB1A818CFD007E9BE3 = {
+						CreatedOnToolsVersion = 6.2;
 					};
 				};
 			};
@@ -186,6 +317,8 @@
 			targets = (
 				D941A1BD1A8048C400606AF0 /* RufRuf */,
 				D941A1D21A8048C500606AF0 /* RufRufTests */,
+				D9E54FB11A818CFD007E9BE3 /* RufRuf WatchKit Extension */,
+				D9E54FBB1A818CFD007E9BE3 /* RufRuf WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -205,6 +338,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9E54FB01A818CFD007E9BE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9E54FBD1A818CFD007E9BE3 /* RufRuf WatchKit App.app in Resources */,
+				D9E54FB91A818CFD007E9BE3 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9E54FBA1A818CFD007E9BE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9E54FC51A818CFD007E9BE3 /* Interface.storyboard in Resources */,
+				D9E54FC71A818CFD007E9BE3 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +380,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D9E54FAE1A818CFD007E9BE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9E54FB71A818CFD007E9BE3 /* InterfaceController.swift in Sources */,
+				D9E54FFD1A819512007E9BE3 /* QuestionManagerModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -236,6 +396,16 @@
 			isa = PBXTargetDependency;
 			target = D941A1BD1A8048C400606AF0 /* RufRuf */;
 			targetProxy = D941A1D41A8048C500606AF0 /* PBXContainerItemProxy */;
+		};
+		D9E54FBF1A818CFD007E9BE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9E54FBB1A818CFD007E9BE3 /* RufRuf WatchKit App */;
+			targetProxy = D9E54FBE1A818CFD007E9BE3 /* PBXContainerItemProxy */;
+		};
+		D9E54FC91A818CFD007E9BE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9E54FB11A818CFD007E9BE3 /* RufRuf WatchKit Extension */;
+			targetProxy = D9E54FC81A818CFD007E9BE3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -254,6 +424,14 @@
 				D941A1CD1A8048C500606AF0 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		D9E54FC31A818CFD007E9BE3 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9E54FC41A818CFD007E9BE3 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -340,6 +518,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = RufRuf/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -350,6 +529,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = RufRuf/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -390,6 +570,66 @@
 			};
 			name = Release;
 		};
+		D9E54FCB1A818CFD007E9BE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RufRuf WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D9E54FCC1A818CFD007E9BE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				INFOPLIST_FILE = "RufRuf WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D9E54FCD1A818CFD007E9BE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = RufRuf_WatchKit_Extension;
+				INFOPLIST_FILE = "RufRuf WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		D9E54FCE1A818CFD007E9BE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COPY_PHASE_STRIP = NO;
+				IBSC_MODULE = RufRuf_WatchKit_Extension;
+				INFOPLIST_FILE = "RufRuf WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -409,12 +649,30 @@
 				D941A1DF1A8048C500606AF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D941A1E01A8048C500606AF0 /* Build configuration list for PBXNativeTarget "RufRufTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D941A1E11A8048C500606AF0 /* Debug */,
 				D941A1E21A8048C500606AF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9E54FCF1A818CFD007E9BE3 /* Build configuration list for PBXNativeTarget "RufRuf WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9E54FCD1A818CFD007E9BE3 /* Debug */,
+				D9E54FCE1A818CFD007E9BE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D9E54FD01A818CFD007E9BE3 /* Build configuration list for PBXNativeTarget "RufRuf WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9E54FCB1A818CFD007E9BE3 /* Debug */,
+				D9E54FCC1A818CFD007E9BE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
