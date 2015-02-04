@@ -13,6 +13,7 @@
                         <label width="136" alignment="center" text="Dummy Question?" textAlignment="left" numberOfLines="0" id="CyJ-kZ-XBU">
                             <fontDescription key="font" type="system" pointSize="16"/>
                         </label>
+                        <label width="136" alignment="center" text="Feedback Text" textAlignment="left" numberOfLines="0" id="Uhb-AX-sIk"/>
                         <button width="1" alignment="center" verticalAlignment="bottom" title="Answer A" id="t0q-HN-MLw">
                             <fontDescription key="font" type="system" pointSize="13"/>
                             <connections>
@@ -29,6 +30,7 @@
                     <connections>
                         <outlet property="answerABtn" destination="t0q-HN-MLw" id="NDT-xR-1bR"/>
                         <outlet property="answerBBtn" destination="Bni-Bg-LV7" id="xEr-cB-Dej"/>
+                        <outlet property="feedbackTxtLabel" destination="Uhb-AX-sIk" id="Qmn-Vf-jud"/>
                         <outlet property="questionTxtLabel" destination="CyJ-kZ-XBU" id="oiP-ye-z0F"/>
                     </connections>
                 </controller>
