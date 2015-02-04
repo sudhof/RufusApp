@@ -22,6 +22,7 @@ class InterfaceController: WKInterfaceController {
     let qManager = QuestionManagerModel()
     // Keep track of whether there's a pending update
     var updating = false
+    var timer = NSTimer()
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
@@ -41,7 +42,7 @@ class InterfaceController: WKInterfaceController {
     }
     
     
-    private func updateQuestion() {
+    func updateQuestion() {
         if !updating {
             updating = true
             var qText: String
@@ -96,7 +97,7 @@ class InterfaceController: WKInterfaceController {
         feedbackTxtLabel.setHidden(false)
         
         // Display feedback for 2 seconds, then display a new question
-        //timer = NSTimer.scheduledTimerWithTimeInterval(2, target:self, selector: Selector("updateQuestion"), userInfo: nil, repeats: false)
+        timer = NSTimer.scheduledTimerWithTimeInterval(2, target:self, selector: Selector("updateQuestion"), userInfo: nil, repeats: false)
         
     }
     
