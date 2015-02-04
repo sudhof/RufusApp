@@ -88,7 +88,7 @@ class InterfaceController: WKInterfaceController {
         feedbackTxtLabel.setText(qManager.getFeedbackText(chosenOptionIndex))
         
         // Hide question details
-        questionTxtLabel.setHidden(true)
+        //questionTxtLabel.setHidden(true)
         answerABtn.setHidden(true)
         answerBBtn.setHidden(true)
         
