@@ -14,7 +14,6 @@ class ViewController: UIViewController {
     @IBOutlet var feedbackLabel : UILabel!
     @IBOutlet var optAButton : UIButton!
     @IBOutlet var optBButton : UIButton!
-    @IBOutlet var optCButton : UIButton!
     @IBOutlet var refreshButton : UIButton!
     
     let qManager = QuestionManagerModel()
@@ -33,16 +32,24 @@ class ViewController: UIViewController {
     
     func refreshUI() {
 
-        var qText: String
-        var qOpts: [String]
-        var qAnswerIndex: Int
-        (qText, qOpts, qAnswerIndex) = qManager.getNewQuestion()
+        qManager.requestQuestion { (prompt, options, error) -> () in
+            if error? == nil {
+                self.questionTxtLabel.text = prompt
+                self.optAButton.setTitle(options[0], forState: UIControlState.Normal)
+                self.optBButton.setTitle(options[1], forState: UIControlState.Normal)
+                self.feedbackLabel.text = ""
+            }
+        }
         
-        questionTxtLabel.text = qText
-        optAButton.setTitle(qOpts[0], forState: UIControlState.Normal)
-        optBButton.setTitle(qOpts[1], forState: UIControlState.Normal)
-        optCButton.setTitle(qOpts[2], forState: UIControlState.Normal)
-        feedbackLabel.text = ""
+        //var qText: String
+        //var qOpts: [String]
+        //var qAnswerIndex: Int
+        //(qText, qOpts) = qManager.getNewQuestion()
+        
+        //questionTxtLabel.text = qText
+        //optAButton.setTitle(qOpts[0], forState: UIControlState.Normal)
+        //optBButton.setTitle(qOpts[1], forState: UIControlState.Normal)
+        //feedbackLabel.text = ""
         
     }
     
@@ -58,9 +65,6 @@ class ViewController: UIViewController {
         evaluateResponse(1)
     }
     
-    @IBAction func optCTapped(sender : AnyObject) {
-        evaluateResponse(2)
-    }
     
     func evaluateResponse(chosenOptionIndex: Int) {
         feedbackLabel.text = qManager.getFeedbackText(chosenOptionIndex)

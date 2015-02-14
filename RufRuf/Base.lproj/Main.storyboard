@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="UWJ-32-P0W">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6750" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="UWJ-32-P0W">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6735"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -17,13 +17,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dummy text should be question" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xud-ok-XI4">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Dummy text should be question" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xud-ok-XI4">
                                 <rect key="frame" x="68" y="79" width="400" height="83"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HrF-WY-veg">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HrF-WY-veg">
                                 <rect key="frame" x="68" y="377" width="400" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="gXC-XY-dcx"/>
@@ -35,7 +35,7 @@
                                     <action selector="refreshTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Urp-m4-Owd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ie-Kq-dyg">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ie-Kq-dyg">
                                 <rect key="frame" x="68" y="172" width="400" height="30"/>
                                 <color key="backgroundColor" red="0.88107167119999996" green="0.88107167119999996" blue="0.88107167119999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -50,7 +50,7 @@
                                     <action selector="optATapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="txg-r9-Rm5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IrR-eg-KGM">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IrR-eg-KGM">
                                 <rect key="frame" x="68" y="208" width="400" height="30"/>
                                 <color key="backgroundColor" red="0.88107167119999996" green="0.88107167119999996" blue="0.88107167119999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -65,22 +65,7 @@
                                     <action selector="optBTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ilX-Hh-ENL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vog-Kd-J0T">
-                                <rect key="frame" x="68" y="246" width="400" height="30"/>
-                                <color key="backgroundColor" red="0.88107167119999996" green="0.88107167119999996" blue="0.88107167119999996" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="KTI-Px-nDE"/>
-                                </constraints>
-                                <color key="tintColor" red="0.1715353261" green="0.1715353261" blue="0.1715353261" alpha="1" colorSpace="calibratedRGB"/>
-                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Answer C">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="optCTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Y8x-RG-cRS"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feedback" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rct-5O-rmY">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Feedback" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rct-5O-rmY">
                                 <rect key="frame" x="68" y="284" width="400" height="76"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -89,25 +74,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Vog-Kd-J0T" firstAttribute="trailing" secondItem="IrR-eg-KGM" secondAttribute="trailing" id="4FD-kz-AHK"/>
                             <constraint firstItem="Xud-ok-XI4" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="15" id="4fz-Qx-ygZ"/>
                             <constraint firstItem="Rct-5O-rmY" firstAttribute="trailing" secondItem="HrF-WY-veg" secondAttribute="trailing" id="4rl-fB-S6z"/>
                             <constraint firstItem="Xud-ok-XI4" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="-32" id="8jv-ao-QZA"/>
                             <constraint firstItem="IrR-eg-KGM" firstAttribute="top" secondItem="3ie-Kq-dyg" secondAttribute="bottom" constant="6" id="9pR-mz-yFG"/>
                             <constraint firstItem="HrF-WY-veg" firstAttribute="top" secondItem="Rct-5O-rmY" secondAttribute="bottom" constant="17" id="AF8-qa-bK3"/>
-                            <constraint firstItem="Vog-Kd-J0T" firstAttribute="leading" secondItem="HrF-WY-veg" secondAttribute="leading" id="Ar9-qP-sml"/>
                             <constraint firstItem="Rct-5O-rmY" firstAttribute="leading" secondItem="HrF-WY-veg" secondAttribute="leading" id="B1m-ia-8hG"/>
                             <constraint firstItem="Xud-ok-XI4" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="52" id="Has-zm-S1Y"/>
                             <constraint firstItem="3ie-Kq-dyg" firstAttribute="leading" secondItem="IrR-eg-KGM" secondAttribute="leading" id="JKk-5Q-Pea"/>
-                            <constraint firstItem="Vog-Kd-J0T" firstAttribute="top" secondItem="IrR-eg-KGM" secondAttribute="bottom" constant="8" id="L8E-dm-8hI"/>
-                            <constraint firstItem="HrF-WY-veg" firstAttribute="top" secondItem="Vog-Kd-J0T" secondAttribute="bottom" constant="101" id="WsQ-2x-WKS"/>
                             <constraint firstItem="3ie-Kq-dyg" firstAttribute="top" secondItem="Xud-ok-XI4" secondAttribute="bottom" constant="10" id="Wwc-Vh-5LA"/>
                             <constraint firstItem="HrF-WY-veg" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="68" id="Xiv-ux-TPD"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="HrF-WY-veg" secondAttribute="bottom" constant="193" id="Xt0-TA-YFl"/>
-                            <constraint firstItem="HrF-WY-veg" firstAttribute="trailing" secondItem="Vog-Kd-J0T" secondAttribute="trailing" id="dFc-g9-jzP"/>
                             <constraint firstItem="3ie-Kq-dyg" firstAttribute="trailing" secondItem="IrR-eg-KGM" secondAttribute="trailing" id="ggg-Ro-Wz5"/>
-                            <constraint firstItem="Rct-5O-rmY" firstAttribute="top" secondItem="Vog-Kd-J0T" secondAttribute="bottom" constant="8" id="jBn-9m-BkK"/>
-                            <constraint firstItem="Vog-Kd-J0T" firstAttribute="leading" secondItem="IrR-eg-KGM" secondAttribute="leading" id="tZa-o7-lYy"/>
                             <constraint firstItem="3ie-Kq-dyg" firstAttribute="trailing" secondItem="Xud-ok-XI4" secondAttribute="trailing" id="xhU-dc-Xu5"/>
                         </constraints>
                     </view>
@@ -116,7 +94,6 @@
                         <outlet property="feedbackLabel" destination="Rct-5O-rmY" id="zzI-QW-jsY"/>
                         <outlet property="optAButton" destination="3ie-Kq-dyg" id="vzo-Ya-alc"/>
                         <outlet property="optBButton" destination="IrR-eg-KGM" id="chp-B4-gnm"/>
-                        <outlet property="optCButton" destination="Vog-Kd-J0T" id="85Q-Pb-FDb"/>
                         <outlet property="questionTxtLabel" destination="Xud-ok-XI4" id="Zn1-MO-OMX"/>
                         <outlet property="refreshButton" destination="HrF-WY-veg" id="stG-H7-bed"/>
                     </connections>

@@ -33,7 +33,7 @@ class InterfaceController: WKInterfaceController {
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
-        displayQuestion()
+        updateQuestion()
     }
 
     override func didDeactivate() {
@@ -52,22 +52,15 @@ class InterfaceController: WKInterfaceController {
     func updateQuestion() {
         if !updating {
             updating = true
-            var qText: String
-            var qOpts: [String]
-            var qAnswerIndex: Int
-            (qText, qOpts, qAnswerIndex) = qManager.getNewQuestion()
-            displayQuestionUI(qText, qOpts: qOpts)
-            self.updating = false
+            qManager.requestQuestion { (prompt, options, error) -> () in
+                if error? == nil {
+                    self.displayQuestionUI(prompt!, qOpts: options)
+                    self.updating = false
+                }
+            }
         }
     }
 
-    private func displayQuestion() {
-        var qText: String
-        var qOpts: [String]
-        var qAnswerIndex: Int
-        (qText, qOpts, qAnswerIndex) = qManager.getCachedQuestion()
-        displayQuestionUI(qText, qOpts: qOpts)
-    }
     
     private func displayQuestionUI(qText: String, qOpts: [String]) {
         // Update UI text:
