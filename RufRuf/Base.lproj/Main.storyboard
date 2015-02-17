@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6750" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="UWJ-32-P0W">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6735"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Rufus-->
@@ -17,80 +16,67 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Dummy text should be question" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xud-ok-XI4">
-                                <rect key="frame" x="68" y="79" width="400" height="83"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HrF-WY-veg">
-                                <rect key="frame" x="68" y="377" width="400" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="gXC-XY-dcx"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HrF-WY-veg">
+                                <rect key="frame" x="29" y="523" width="310" height="46"/>
+                                <color key="backgroundColor" red="1" green="0.56862745100000001" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <state key="normal" title="Refresh">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="refreshTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Urp-m4-Owd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ie-Kq-dyg">
-                                <rect key="frame" x="68" y="172" width="400" height="30"/>
-                                <color key="backgroundColor" red="0.88107167119999996" green="0.88107167119999996" blue="0.88107167119999996" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="g1I-RE-2JC"/>
-                                </constraints>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Feedback" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rct-5O-rmY" customClass="RDLabel" customModule="RufRuf" customModuleProvider="target">
+                                <rect key="frame" x="29" y="415" width="310" height="95"/>
+                                <color key="backgroundColor" red="0.99619489908218384" green="0.82463008165359497" blue="0.60852736234664917" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="banner1" translatesAutoresizingMaskIntoConstraints="NO" id="KRK-Ni-NM2">
+                                <rect key="frame" x="-1" y="64" width="382" height="127"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ie-Kq-dyg">
+                                <rect key="frame" x="29" y="415" width="310" height="41"/>
+                                <color key="backgroundColor" red="0.99616515640000003" green="0.82317584749999995" blue="0.60544848439999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="tintColor" red="0.17153532608695654" green="0.17153532608695654" blue="0.17153532608695654" alpha="1" colorSpace="calibratedRGB"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Answer A">
+                                <state key="normal" title="China">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="optATapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="txg-r9-Rm5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IrR-eg-KGM">
-                                <rect key="frame" x="68" y="208" width="400" height="30"/>
-                                <color key="backgroundColor" red="0.88107167119999996" green="0.88107167119999996" blue="0.88107167119999996" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="eNt-W4-RtO"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IrR-eg-KGM">
+                                <rect key="frame" x="29" y="467" width="310" height="43"/>
+                                <color key="backgroundColor" red="0.99616515636444092" green="0.82317584753036499" blue="0.60544848442077637" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="tintColor" red="0.1715353261" green="0.1715353261" blue="0.1715353261" alpha="1" colorSpace="calibratedRGB"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Answer B">
+                                <state key="normal" title="USA">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="optBTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ilX-Hh-ENL"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Feedback" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rct-5O-rmY">
-                                <rect key="frame" x="68" y="284" width="400" height="76"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Which country has greater religious diversity?" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xud-ok-XI4" customClass="RDLabel" customModule="RufRuf" customModuleProvider="target">
+                                <rect key="frame" x="63" y="208" width="254" height="184"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="Xud-ok-XI4" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="15" id="4fz-Qx-ygZ"/>
-                            <constraint firstItem="Rct-5O-rmY" firstAttribute="trailing" secondItem="HrF-WY-veg" secondAttribute="trailing" id="4rl-fB-S6z"/>
-                            <constraint firstItem="Xud-ok-XI4" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="-32" id="8jv-ao-QZA"/>
-                            <constraint firstItem="IrR-eg-KGM" firstAttribute="top" secondItem="3ie-Kq-dyg" secondAttribute="bottom" constant="6" id="9pR-mz-yFG"/>
-                            <constraint firstItem="HrF-WY-veg" firstAttribute="top" secondItem="Rct-5O-rmY" secondAttribute="bottom" constant="17" id="AF8-qa-bK3"/>
-                            <constraint firstItem="Rct-5O-rmY" firstAttribute="leading" secondItem="HrF-WY-veg" secondAttribute="leading" id="B1m-ia-8hG"/>
-                            <constraint firstItem="Xud-ok-XI4" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="52" id="Has-zm-S1Y"/>
-                            <constraint firstItem="3ie-Kq-dyg" firstAttribute="leading" secondItem="IrR-eg-KGM" secondAttribute="leading" id="JKk-5Q-Pea"/>
-                            <constraint firstItem="3ie-Kq-dyg" firstAttribute="top" secondItem="Xud-ok-XI4" secondAttribute="bottom" constant="10" id="Wwc-Vh-5LA"/>
-                            <constraint firstItem="HrF-WY-veg" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="68" id="Xiv-ux-TPD"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="HrF-WY-veg" secondAttribute="bottom" constant="193" id="Xt0-TA-YFl"/>
-                            <constraint firstItem="3ie-Kq-dyg" firstAttribute="trailing" secondItem="IrR-eg-KGM" secondAttribute="trailing" id="ggg-Ro-Wz5"/>
-                            <constraint firstItem="3ie-Kq-dyg" firstAttribute="trailing" secondItem="Xud-ok-XI4" secondAttribute="trailing" id="xhU-dc-Xu5"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Rufus" id="L9n-c0-R0T"/>
                     <connections>
+                        <outlet property="bannerImg" destination="KRK-Ni-NM2" id="6df-Rm-jUd"/>
                         <outlet property="feedbackLabel" destination="Rct-5O-rmY" id="zzI-QW-jsY"/>
                         <outlet property="optAButton" destination="3ie-Kq-dyg" id="vzo-Ya-alc"/>
                         <outlet property="optBButton" destination="IrR-eg-KGM" id="chp-B4-gnm"/>
@@ -121,4 +107,7 @@
             <point key="canvasLocation" x="243" y="-375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="banner1" width="1800" height="600"/>
+    </resources>
 </document>
