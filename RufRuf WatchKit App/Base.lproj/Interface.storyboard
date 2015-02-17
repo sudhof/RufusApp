@@ -10,9 +10,13 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="RufRuf_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label width="136" alignment="center" text="Dummy Question?" textAlignment="left" numberOfLines="0" id="CyJ-kZ-XBU">
-                            <fontDescription key="font" type="system" pointSize="16"/>
-                        </label>
+                        <group width="1" alignment="left" id="Nvc-tH-1zH">
+                            <items>
+                                <label width="136" alignment="center" text="Dummy Question?" textAlignment="left" numberOfLines="0" id="CyJ-kZ-XBU">
+                                    <fontDescription key="font" type="system" pointSize="16"/>
+                                </label>
+                            </items>
+                        </group>
                         <label width="136" alignment="center" text="Feedback Text" textAlignment="left" numberOfLines="0" id="Uhb-AX-sIk"/>
                         <button width="1" alignment="center" verticalAlignment="bottom" title="Answer A" id="t0q-HN-MLw">
                             <fontDescription key="font" type="system" pointSize="13"/>
@@ -35,6 +39,7 @@
                     </connections>
                 </controller>
             </objects>
+            <point key="canvasLocation" x="140" y="33"/>
         </scene>
     </scenes>
 </document>

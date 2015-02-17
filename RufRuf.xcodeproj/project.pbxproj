@@ -667,6 +667,7 @@
 				D9E54FCE1A818CFD007E9BE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D9E54FD01A818CFD007E9BE3 /* Build configuration list for PBXNativeTarget "RufRuf WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -675,6 +676,7 @@
 				D9E54FCC1A818CFD007E9BE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

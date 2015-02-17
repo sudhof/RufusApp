@@ -81,15 +81,15 @@ class InterfaceController: WKInterfaceController {
         feedbackTxtLabel.setText(qManager.getFeedbackText(chosenOptionIndex))
         
         // Hide question details
-        //questionTxtLabel.setHidden(true)
+        questionTxtLabel.setHidden(true)
         answerABtn.setHidden(true)
         answerBBtn.setHidden(true)
         
         // Show feedback text
         feedbackTxtLabel.setHidden(false)
         
-        // Display feedback for 2 seconds, then display a new question
-        timer = NSTimer.scheduledTimerWithTimeInterval(2, target:self, selector: Selector("updateQuestion"), userInfo: nil, repeats: false)
+        // Display feedback for 3 seconds, then display a new question
+        timer = NSTimer.scheduledTimerWithTimeInterval(3, target:self, selector: Selector("updateQuestion"), userInfo: nil, repeats: false)
         
     }
     
