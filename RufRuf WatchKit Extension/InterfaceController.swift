@@ -18,6 +18,8 @@ class InterfaceController: WKInterfaceController {
     @IBOutlet weak var feedbackTxtLabel: WKInterfaceLabel!
     @IBOutlet weak var answerBBtn: WKInterfaceButton!
     @IBOutlet weak var answerABtn: WKInterfaceButton!
+    @IBOutlet weak var newQuestionBtn: WKInterfaceButton!
+    @IBOutlet weak var separatorLine: WKInterfaceSeparator!
     
     let qManager = QuestionManagerModel()
     // Keep track of whether there's a pending update
@@ -49,6 +51,10 @@ class InterfaceController: WKInterfaceController {
         evaluateResponse(1)
     }
     
+    @IBAction func newQuestionButtonTapped() {
+        updateQuestion()
+    }
+    
     func updateQuestion() {
         if !updating {
             updating = true
@@ -73,6 +79,7 @@ class InterfaceController: WKInterfaceController {
         answerBBtn.setHidden(false)
         // Hide feedback UI elem:
         feedbackTxtLabel.setHidden(true)
+        newQuestionBtn.setHidden(true)
     }
 
     
@@ -88,8 +95,11 @@ class InterfaceController: WKInterfaceController {
         // Show feedback text
         feedbackTxtLabel.setHidden(false)
         
+        // Show new question button
+        newQuestionBtn.setHidden(false)
+        
         // Display feedback for 3 seconds, then display a new question
-        timer = NSTimer.scheduledTimerWithTimeInterval(3, target:self, selector: Selector("updateQuestion"), userInfo: nil, repeats: false)
+        //timer = NSTimer.scheduledTimerWithTimeInterval(3, target:self, selector: Selector("updateQuestion"), userInfo: nil, repeats: false)
         
     }
     
